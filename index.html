@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape da Masmorra ASCII</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Escape da Masmorra 🏰💻</h1>
+        <p>Digite uma palavra para calcular seu valor ASCII:</p>
+        
+        <input type="text" id="inputText" placeholder="Digite sua palavra..." />
+        
+        <div class="button-group">
+            <button class="btn" id="calculateBtn">
+                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+                <span>CALCULAR</span>
+            </button>
+            
+            <button class="btn" id="returnBtn">
+                <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                    <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                </svg>
+                <span>RETORNAR</span>
+            </button>
+        </div>
+        
+        <div id="resultContainer">
+            <h3>Resultado:</h3>
+            <div id="calculation"></div>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
